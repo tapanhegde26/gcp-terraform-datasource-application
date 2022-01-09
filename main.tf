@@ -12,7 +12,7 @@ data "terraform_remote_state" "developmentwsdata" {
   backend = "local"
 
   config = {
-    path = "/Users/c5281159/terraform-associate-tutorials/devopsjunction/terraform.tfstate.d/test/terraform.tfstate"
+    path = "${path.module}/terraform.tfstate.d/test/terraform.tfstate"
   }
 }
 
